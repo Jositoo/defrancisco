@@ -1,0 +1,96 @@
+<!-- Cómo Trabajo - Daniel de Francisco Psicología -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Trabajo - Daniel de Francisco</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <style>
+        .fade-up-element { opacity: 0; transform: translateY(30px); transition: opacity 0.8s, transform 0.8s; }
+        .fade-up-element.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-[#fbf9f8] text-[#1b1c1c] font-sans flex flex-col min-h-screen">
+
+    <header class="w-full h-20 bg-[#fbf9f8] border-b border-[#5f7464]/20 flex justify-between items-center px-8 max-w-[1140px] mx-auto">
+        <a href="index.html" class="flex items-center hover:scale-105 transition-transform duration-300">
+    <img src="logo.png" alt="Daniel de Francisco Psicología" class="h-10 w-auto object-contain">
+</a>
+        <nav class="hidden md:flex gap-8 items-center text-base">
+            <a href="index.html" class="text-[#434843] hover:text-[#5f7464]">Inicio</a>
+            <a href="sobre-mi.html" class="text-[#434843] hover:text-[#5f7464]">Quién soy</a>
+            <a href="servicios.html" class="text-[#5f7464] font-bold border-b-2 border-[#5f7464] pb-1">Cómo trabajo</a>
+            <a href="contacto.html" class="text-[#434843] hover:text-[#5f7464]">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section class="max-w-[1140px] mx-auto px-6 py-16 text-center fade-up-element">
+            <h1 class="font-serif text-4xl md:text-5xl text-[#5f7464] mb-6 font-semibold">Terapia adaptada a ti</h1>
+            <p class="text-lg text-[#434843] max-w-2xl mx-auto">
+                Trabajo con un proceso estructurado para entender tus necesidades y dotarte de herramientas efectivas que puedas aplicar en tu día a día.
+            </p>
+        </section>
+
+        <!-- Etapas de Metodología -->
+        <section class="max-w-[1140px] mx-auto px-6 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg border border-[#5f7464]/20 p-8 hover:-translate-y-2 hover:shadow-lg transition-all fade-up-element">
+                    <div class="w-12 h-12 rounded-full bg-[#e2f9e5] flex items-center justify-center text-[#5f7464] mb-6"><span class="material-symbols-outlined">assignment</span></div>
+                    <h3 class="font-serif text-2xl text-[#5f7464] mb-4 font-semibold">1. Evaluación y Psicoeducación</h3>
+                    <p class="text-[#434843] mb-4">
+                        En las primeras 2 a 4 sesiones clarificaremos el problema. Te daré una explicación detallada de tu situación para que entiendas lo que te pasa, estableciendo conjuntamente los objetivos y un plan personalizado.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg border border-[#5f7464]/20 p-8 hover:-translate-y-2 hover:shadow-lg transition-all fade-up-element delay-100">
+                    <div class="w-12 h-12 rounded-full bg-[#e2f9e5] flex items-center justify-center text-[#5f7464] mb-6"><span class="material-symbols-outlined">model_training</span></div>
+                    <h3 class="font-serif text-2xl text-[#5f7464] mb-4 font-semibold">2. Intervención y Seguimiento</h3>
+                    <p class="text-[#434843] mb-4">
+                        Trabajando juntos, te proporcionaré herramientas y estrategias (ACT, DBT, CFT). Analizaremos tu progreso y espaciaremos las sesiones gradualmente (1 mes, 3 meses, 6 meses...) según evolucione la terapia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-[1140px] mx-auto px-6 pb-24">
+            <h2 class="font-serif text-3xl text-center text-[#5f7464] mb-12 font-semibold fade-up-element">Mis Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Terapia Online -->
+                <div class="bg-white rounded-lg border border-[#5f7464]/20 p-8 fade-up-element">
+                    <span class="material-symbols-outlined text-[#5f7464] text-3xl mb-4">laptop_mac</span>
+                    <h3 class="font-serif text-xl text-[#5f7464] font-semibold mb-2">Terapia Online</h3>
+                    <p class="text-[#434843] text-sm">Recibe asistencia con la misma eficacia que la presencial. Aprovecha la comodidad, flexibilidad y ahorra desplazamientos, accediendo desde casa.</p>
+                </div>
+                <!-- Ansiedad y Autoestima -->
+                <div class="bg-white rounded-lg border border-[#5f7464]/20 p-8 fade-up-element">
+                    <span class="material-symbols-outlined text-[#5f7464] text-3xl mb-4">psychology</span>
+                    <h3 class="font-serif text-xl text-[#5f7464] font-semibold mb-2">Ansiedad y Autoestima</h3>
+                    <p class="text-[#434843] text-sm">Tratamiento para población infanto-juvenil y adulta en problemas de estado de ánimo, habilidades sociales y asertividad.</p>
+                </div>
+                <!-- Consultas Email -->
+                <div class="bg-white rounded-lg border border-[#5f7464]/20 p-8 fade-up-element">
+                    <span class="material-symbols-outlined text-[#5f7464] text-3xl mb-4">mail</span>
+                    <h3 class="font-serif text-xl text-[#5f7464] font-semibold mb-2">Consultas por E-mail</h3>
+                    <p class="text-[#434843] text-sm">Orientación especializada para resolver dudas o problemas esporádicos. Aprovecha la rapidez y agilidad del correo electrónico.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#dce2d7]/50 border-y border-[#5f7464]/20 py-16 fade-up-element text-center">
+            <h2 class="font-serif text-3xl text-[#5f7464] mb-6 font-semibold">¿Listo para empezar tu proceso?</h2>
+            <button class="bg-[#5f7464] text-white px-8 py-3 rounded-lg hover:-translate-y-1 hover:shadow-lg transition-all font-semibold">Contactar ahora</button>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); } });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

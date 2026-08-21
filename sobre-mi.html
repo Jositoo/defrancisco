@@ -1,0 +1,96 @@
+<!-- Quién Soy - Daniel de Francisco Psicología -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quién Soy - Daniel de Francisco Psicología</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <style>
+        .breathe-animation { animation: breathe 8s ease-in-out infinite; }
+        @keyframes breathe { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } }
+        .soft-shadow { box-shadow: 0px 4px 20px rgba(95, 116, 100, 0.1); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-[#fbf9f8] text-[#1b1c1c] font-sans antialiased">
+    
+    <nav class="bg-[#fbf9f8] w-full h-20 border-b border-[#5f7464]/20">
+        <div class="flex justify-between items-center px-8 max-w-[1140px] mx-auto h-full">
+            <a href="index.html" class="flex items-center hover:scale-105 transition-transform duration-300">
+    <img src="logo.png" alt="Daniel de Francisco Psicología" class="h-10 w-auto object-contain">
+</a>
+            <div class="hidden md:flex space-x-8 text-base">
+                <a href="index.html" class="text-[#434843] hover:text-[#5f7464]">Inicio</a>
+                <a href="sobre-mi.html" class="text-[#5f7464] font-bold border-b-2 border-[#5f7464] pb-1">Quién soy</a>
+                <a href="servicios.html" class="text-[#434843] hover:text-[#5f7464]">Cómo trabajo</a>
+                <a href="contacto.html" class="text-[#434843] hover:text-[#5f7464]">Contacto</a>
+            </div>
+            <button class="hidden md:block bg-[#5f7464] text-white px-6 py-3 rounded-lg hover:-translate-y-0.5 hover:shadow-lg transition-all">Pedir Cita</button>
+        </div>
+    </nav>
+
+    <main class="max-w-[1140px] mx-auto px-6 md:px-8 py-16 md:py-24">
+        <section class="reveal grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center mb-24">
+            <div class="md:col-span-5 relative">
+                <div class="rounded-t-full rounded-b-lg overflow-hidden border-2 border-[#5f7464]/30 soft-shadow relative z-10 aspect-[3/4]">
+                    <img src="escritorio.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out" alt="Retrato del psicólogo">
+                </div>
+                <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-[#e2f9e5] rounded-full opacity-60 breathe-animation -z-10"></div>
+            </div>
+            <div class="md:col-span-7 flex flex-col justify-center">
+                <span class="text-xs text-[#5f7464] tracking-widest uppercase mb-4 font-bold">Psicólogo Colegiado</span>
+                <h1 class="font-serif text-4xl md:text-5xl text-[#435447] mb-6 font-semibold">Evaluación e intervención clínica avanzada.</h1>
+                <p class="text-lg text-[#434843] mb-8 max-w-2xl leading-relaxed">
+                    Me llamo Daniel de Francisco. Soy psicólogo colegiado especializado en evaluación e intervención clínica, y experto en terapias contextuales conocidas como terapias de tercera generación.<br><br>
+                    Estoy formado en Terapia Dialéctico Conductual (DBT), Terapia Centrada en la Compasión (CFT) y Terapia de Aceptación y Compromiso (ACT). Además, cuento con formación en psicología del bienestar por la Universidad de Yale.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <span class="bg-[#e2f9e5] text-[#435447] text-xs font-bold px-4 py-2 rounded-full border border-[#5f7464]/20 uppercase">ACT</span>
+                    <span class="bg-[#e2f9e5] text-[#435447] text-xs font-bold px-4 py-2 rounded-full border border-[#5f7464]/20 uppercase">DBT</span>
+                    <span class="bg-[#e2f9e5] text-[#435447] text-xs font-bold px-4 py-2 rounded-full border border-[#5f7464]/20 uppercase">CFT</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal mb-16">
+            <h2 class="font-serif text-3xl text-[#435447] mb-12 text-center font-semibold">Mis Valores y Enfoque</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-lg border border-[#5f7464]/20 soft-shadow hover:-translate-y-2 hover:shadow-xl transition-all">
+                    <span class="material-symbols-outlined text-[#5f7464] mb-6 text-4xl">verified_user</span>
+                    <h3 class="font-serif text-xl text-[#435447] mb-4 font-semibold">Ética y Transparencia</h3>
+                    <p class="text-base text-[#434843]">
+                        Garantizo absoluta confidencialidad. Desde la primera sesión, mi intención es conseguir la mayor transparencia explicando el modelo terapéutico.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg border border-[#5f7464]/20 soft-shadow hover:-translate-y-2 hover:shadow-xl transition-all">
+                    <span class="material-symbols-outlined text-[#5f7464] mb-6 text-4xl">favorite</span>
+                    <h3 class="font-serif text-xl text-[#435447] mb-4 font-semibold">Espacio Seguro</h3>
+                    <p class="text-base text-[#434843]">
+                        Ofrezco siempre un espacio seguro donde te sientas con confianza, tranquilidad y sin ningún miedo a ser juzgado o invalidado.
+                    </p>
+                </div>
+                <div class="bg-[#5f7464] p-8 rounded-lg soft-shadow flex flex-col justify-center items-center text-center hover:-translate-y-2 hover:shadow-xl transition-all">
+                    <h3 class="font-serif text-xl text-white mb-4 font-semibold">¿Hablamos?</h3>
+                    <p class="text-white/80 text-sm mb-6">Da el primer paso para mejorar tu bienestar.</p>
+                    <button class="bg-[#fbf9f8] text-[#5f7464] px-6 py-3 rounded-lg hover:bg-[#e2f9e5] transition-all w-full font-bold">
+                        Escríbeme
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const reveals = document.querySelectorAll(".reveal");
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add("active"); obs.unobserve(entry.target); } });
+            }, { threshold: 0.1 });
+            reveals.forEach(reveal => observer.observe(reveal));
+        });
+    </script>
+</body>
+</html>

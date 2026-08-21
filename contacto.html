@@ -1,0 +1,100 @@
+<!-- Contacto - Daniel de Francisco Psicología -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Daniel de Francisco</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <style>
+        .reveal-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-[#fbf9f8] text-[#1b1c1c] font-sans min-h-screen flex flex-col">
+
+    <nav class="bg-[#fbf9f8] text-[#5f7464] w-full h-20 border-b border-[#5f7464]/20 hidden md:flex justify-between items-center px-8 max-w-[1140px] mx-auto reveal-on-scroll is-visible">
+        <a href="index.html" class="flex items-center hover:scale-105 transition-transform duration-300">
+    <img src="logo.jpg" alt="Daniel de Francisco Psicología" class="h-10 w-auto object-contain">
+</a>
+        <div class="flex gap-8 text-base">
+            <a href="index.html" class="text-[#434843] hover:text-[#5f7464]">Inicio</a>
+            <a href="sobre-mi.html" class="text-[#434843] hover:text-[#5f7464]">Quién soy</a>
+            <a href="servicios.html" class="text-[#434843] hover:text-[#5f7464]">Cómo trabajo</a>
+            <a href="contacto.html" class="text-[#5f7464] font-bold border-b-2 border-[#5f7464] pb-1">Contacto</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow w-full max-w-[1140px] mx-auto px-6 py-16 flex flex-col gap-12">
+        <header class="text-center max-w-2xl mx-auto space-y-4 reveal-on-scroll">
+            <h1 class="font-serif text-4xl md:text-5xl text-[#5f7464] font-semibold">Contacta conmigo</h1>
+            <p class="text-lg text-[#434843]">Escríbeme un mensaje sin compromiso. Da el primer paso hacia tu bienestar emocional y te responderé lo antes posible.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div class="md:col-span-7 bg-white p-8 md:p-12 rounded-lg border border-[#5f7464]/20 shadow-sm reveal-on-scroll">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-[#434843] mb-2 uppercase">Nombre *</label>
+                            <input type="text" class="w-full bg-[#f6f3f2] border-0 border-b border-[#5f7464]/50 rounded-t-lg focus:ring-0 focus:border-[#5f7464] px-4 py-3" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-[#434843] mb-2 uppercase">Apellidos</label>
+                            <input type="text" class="w-full bg-[#f6f3f2] border-0 border-b border-[#5f7464]/50 rounded-t-lg focus:ring-0 focus:border-[#5f7464] px-4 py-3" placeholder="Tus apellidos">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-[#434843] mb-2 uppercase">Email *</label>
+                        <input type="email" class="w-full bg-[#f6f3f2] border-0 border-b border-[#5f7464]/50 rounded-t-lg focus:ring-0 focus:border-[#5f7464] px-4 py-3" placeholder="tu@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-[#434843] mb-2 uppercase">Mensaje *</label>
+                        <textarea rows="4" class="w-full bg-[#f6f3f2] border-0 border-b border-[#5f7464]/50 rounded-t-lg focus:ring-0 focus:border-[#5f7464] px-4 py-3" placeholder="¿En qué puedo ayudarte?"></textarea>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="privacy" class="text-[#5f7464] focus:ring-[#5f7464] rounded">
+                        <label for="privacy" class="text-sm text-[#434843]">Acepto la política de privacidad</label>
+                    </div>
+                    <button type="button" class="w-full bg-[#5f7464] text-white py-4 rounded-lg font-bold hover:bg-[#475b4c] transition-all">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="md:col-span-5 space-y-8 reveal-on-scroll">
+                <div class="bg-white p-8 rounded-lg border border-[#5f7464]/20 shadow-sm flex flex-col gap-6">
+                    <h3 class="font-serif text-2xl text-[#5f7464] font-semibold mb-2">Información de Consulta</h3>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-full bg-[#e2f9e5] flex items-center justify-center text-[#5f7464] shrink-0">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-[#434843] uppercase">Ubicación</p>
+                            <p class="text-base text-[#1b1c1c] mt-1">Boadilla del Monte, Madrid.<br>También sesiones 100% Online.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-full bg-[#e2f9e5] flex items-center justify-center text-[#5f7464] shrink-0">
+                            <span class="material-symbols-outlined">forum</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-[#434843] uppercase">Consultas por E-mail</p>
+                            <p class="text-base text-[#1b1c1c] mt-1">Servicio ágil y especializado para dudas rápidas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
